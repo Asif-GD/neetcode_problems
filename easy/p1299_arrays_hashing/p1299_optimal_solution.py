@@ -3,6 +3,9 @@
 # compare initial max to the previous element in the array
 
 def replace_elements(self, arr: list[int]) -> list[int]:
+    if len(arr) == 1:
+        arr[-1] = -1
+        return arr
     current_max = -1
     for index in range(len(arr) - 1, -1, -1):
         new_max = max(current_max, arr[index])
