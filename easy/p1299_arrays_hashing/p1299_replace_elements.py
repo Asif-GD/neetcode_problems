@@ -1,4 +1,4 @@
-def replace_elements(self, arr: list[int]) -> list[int]:
+def replace_elements(arr: list[int]) -> list[int]:
     output_list = list()
     if len(arr) == 1:
         output_list.append(-1)

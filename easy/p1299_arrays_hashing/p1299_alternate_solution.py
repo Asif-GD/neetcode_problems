@@ -1,4 +1,4 @@
-def replace_elements(self, arr: list[int]) -> list[int]:
+def replace_elements(arr: list[int]) -> list[int]:
     output_list = list()
     if len(arr) == 1:
         output_list.append(-1)
@@ -16,4 +16,4 @@ def replace_elements(self, arr: list[int]) -> list[int]:
                 current_index += 1
 
 
-print(replace_elements(list, [17, 18, 5, 4, 6, 1]))
+print(replace_elements([17, 18, 5, 4, 6, 1]))

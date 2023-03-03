@@ -2,7 +2,7 @@
 # we iterate through the array in reverse
 # compare initial max to the previous element in the array
 
-def replace_elements(self, arr: list[int]) -> list[int]:
+def replace_elements(arr: list[int]) -> list[int]:
     if len(arr) == 1:
         arr[-1] = -1
         return arr
@@ -14,4 +14,4 @@ def replace_elements(self, arr: list[int]) -> list[int]:
     return arr
 
 
-print(replace_elements(list, [17, 18, 5, 4, 6, 1]))
+print(replace_elements([17, 18, 5, 4, 6, 1]))
