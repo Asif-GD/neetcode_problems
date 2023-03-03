@@ -1,3 +1,4 @@
+# neetcode's solution
 # initial max = -1
 # we iterate through the array in reverse
 # compare initial max to the previous element in the array
