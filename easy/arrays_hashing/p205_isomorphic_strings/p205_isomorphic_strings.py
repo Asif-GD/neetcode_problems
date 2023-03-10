@@ -23,4 +23,5 @@ def is_isomorphic(s: str, t: str) -> bool:
 print(is_isomorphic(s="egg", t="add"))
 print(is_isomorphic(s="foo", t="bar"))
 print(is_isomorphic(s="paper", t="title"))
+print(is_isomorphic(s="baba", t="aabb"))
 
