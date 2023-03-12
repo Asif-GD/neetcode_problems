@@ -3,7 +3,7 @@ def next_greater_element(nums1: list[int], nums2: list[int]) -> list[int]:
 
     for number1 in nums1:
         number1_position = nums2.index(number1)
-        for index in range(number1_position, len(nums2)):
+        for index in range(number1_position + 1, len(nums2)):
             if nums2[index] > number1:
                 output.append(nums2[index])
                 break
