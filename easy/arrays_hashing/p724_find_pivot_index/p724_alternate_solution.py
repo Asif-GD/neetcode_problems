@@ -15,3 +15,4 @@ def pivot_index(nums: list[int]) -> int:
 
 
 print(pivot_index([1, 7, 3, 6, 5, 6]))
+print(pivot_index([-1, -1, -1, -1, 0, 1]))
