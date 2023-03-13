@@ -10,6 +10,7 @@ def pivot_index(nums: list[int]) -> int:
     # print(f"nums = {nums}")
     for index in range(1, len(nums) - 1):
         # print(f"index = {index}")
+        # this is what contributes to a lot of time. calculating the sum at each index
         sum_left = sum(nums[:index])
         sum_right = sum(nums[index + 1:])
         # print(f"sum_left <-> sum_right = {sum_left} <-> {sum_right}")
