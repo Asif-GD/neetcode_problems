@@ -12,4 +12,4 @@ def find_missing_numbers(nums: list[int]) -> list[int]:
 
 print(find_missing_numbers([4, 3, 2, 7, 8, 2, 3, 1]))
 print(find_missing_numbers([1, 1]))
-print(find_missing_numbers([1, 3, 5, 7]))
+# print(find_missing_numbers([1, 3, 5, 7]))
