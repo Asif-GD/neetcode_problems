@@ -1,3 +1,18 @@
+"""
+Explanation -
+The problem requires us to find the difference between the highest and lowest amongst a certain number of
+students from a list.
+Return the least difference after calculation.
+
+nums[int] - scores of all students
+k - the number students to compare at a time.
+
+So, a sliding window makes this easier. But the list has to be sorted first.
+This way the first student will have the lowest score and the last student will have the highest score.
+(sort is ascending by default)
+"""
+
+
 def minimum_difference(nums: list[int], k: int) -> int:
     start = 0
     stop = k - 1
