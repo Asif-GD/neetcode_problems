@@ -10,3 +10,7 @@ def remove_duplicates(nums: list[int]) -> int:
             right += 1
 
     return left
+
+
+print(remove_duplicates(nums=[1, 1, 2]))
+print(remove_duplicates(nums=[0, 0, 1, 1, 1, 2, 2, 3, 3, 4]))
