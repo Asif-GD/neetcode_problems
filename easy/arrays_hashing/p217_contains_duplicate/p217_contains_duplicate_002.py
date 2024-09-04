@@ -1,4 +1,11 @@
 class Solution:
+    """
+    PROBLEMS with this solution
+    1. doesn't address the situation where the list contains only one element;
+    in that case no check would be required.
+    2. it's more efficient to sort the list first.
+    3. can be made using one loop in place of two.
+    """
     def has_Duplicate(self, nums: list[int]) -> bool:
         pointer_1: [int] = 0
 
