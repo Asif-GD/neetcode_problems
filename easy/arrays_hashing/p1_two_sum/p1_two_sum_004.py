@@ -4,7 +4,7 @@ def two_sum(nums: list[int], target: int) -> list[int]:
 
     for index, number in enumerate(nums):
         difference = target - number
-        if difference in hash_map:  # the current index will always be greater than the index of remainder in hashmap
+        if difference in hash_map:  # the current index will always be greater than the index of difference in hashmap
             return [hash_map[difference], index]
         else:
             hash_map[number] = index
