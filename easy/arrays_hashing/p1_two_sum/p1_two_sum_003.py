@@ -5,13 +5,12 @@ def two_sum(nums: list[int], target: int) -> list[int]:
 
     for index in range(len(nums)):
         remainder = target - nums[index]
-        if remainder in hash_map:
-            solution.append(index)
+        if remainder in hash_map: # the current index will always be greater than the index of remainder in hashmap
             solution.append(hash_map[remainder])
+            solution.append(index)
         else:
             hash_map[nums[index]] = index
 
-    solution.sort()
     return solution
 
 
