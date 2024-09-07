@@ -3,11 +3,15 @@ class Solution:
         # if the length of the two strings are different, they aren't anagrams
         if len(s) != len(t):
             return False
-
-        sorted_s = sorted(s)
-        sorted_t = sorted(t)
-
-        if sorted_s == sorted_t:
-            return True
         else:
-            return False
+            # problem: this sorting returns a list, which takes up extra memory.
+            # sorted_s = sorted(s)
+            # sorted_t = sorted(t)
+
+            # solution: apply string join.
+            s = ''.join(sorted(s))
+            t = ''.join(sorted(t))
+            if s == t:
+                return True
+
+        return False
