@@ -27,7 +27,7 @@ class Solution:
 
         grouped_anagrams = list(result_hashmap.values())
 
-        print(f"final result_hashmap: {result_hashmap}")
+        # print(f"final result_hashmap: {result_hashmap}")
 
         return grouped_anagrams
 
