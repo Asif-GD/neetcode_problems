@@ -1,5 +1,9 @@
 class Solution:
     def remove_anagrams(self, words: list[str]) -> list[str]:
+
+        if len(words) == 1:
+            return words
+
         index = 1
         while index < len(words):
             if sorted(words[index]) == sorted(words[index - 1]):
