@@ -15,9 +15,11 @@ class Solution:
     def encode(self, strs: list[str]) -> str:
         encode_string: [str] = ""
         for word in strs:
-            encode_string += str(len(word)) + "#"
-            for char in word:
-                encode_string += char
+            encode_string += str(len(word)) + "#" + word
+
+            # this can be simply put as '+ word' in previous loop
+            # for char in word:
+            #     encode_string += char
 
         return encode_string
 
